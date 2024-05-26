@@ -6,7 +6,7 @@ body {
   
   .design-page {
     padding: 2rem;
-    background: url('/images/galaxy-night-landscape.jpg') no-repeat center center fixed;
+    background: url('/public/images/galaxy-night-landscape.jpg') no-repeat center center fixed;
     background-size: cover;
   }
   
@@ -78,11 +78,11 @@ body {
   
   /* Specific background images for each design entry */
   .design-entry-1 .entry-image {
-    background-image: url('/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframe_Placeholder.png');
   }
   
   .design-entry-2 .entry-image {
-    background-image: url('/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframe_Placeholder.png');
   }
   
   /* Wireframe Collage */
@@ -137,30 +137,30 @@ body {
   .wireframe-collage .collage-item-1 {
     width: 33.33%;
     height: 600px;
-    background-image: url('/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframe_Placeholder.png');
   }
   
   .wireframe-collage .collage-item-2 {
     width: 33.33%;
     height: 600px;
-    background-image: url('/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframe_Placeholder.png');
   }
   
   .wireframe-collage .collage-item-3 {
     width: 33.33%;
     height: 600px;
-    background-image: url('/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframe_Placeholder.png');
   }
   
   .wireframe-collage .collage-item-4 {
     width: 33.33%;
     height: 400px;
-    background-image: url('/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframe_Placeholder.png');
   }
   
   .wireframe-collage .collage-item-5 {
     width: 66.66%;
     height: 400px;
-    background-image: url('/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframe_Placeholder.png');
   }
   

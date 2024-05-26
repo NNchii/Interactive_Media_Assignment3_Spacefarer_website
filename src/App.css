@@ -27,7 +27,7 @@ body {
 .navbar .logo {
   width: 150px; /* Adjusted size */
   height: 150px; /* Adjusted size */
-  background-image: url('/images/StarfarerLogo.png'); /* Ensure the path is correct */
+  background-image: url('/public/images/StarfarerLogo.png'); /* Ensure the path is correct */
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 -50px; /* Add margin to control space around the logo */

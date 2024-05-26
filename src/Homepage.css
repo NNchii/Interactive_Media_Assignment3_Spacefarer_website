@@ -29,7 +29,7 @@ html, body {
   width: 400px; /* Increased size */
   height: 400px; /* Increased size */
   z-index: 1; /* Ensure it stays behind the text but in front of the background */
-  background-image: url('/images/image-from-rawpixel-id-12158813-png.png'); /* Ensure the path is correct */
+  background-image: url('/public/images/image-from-rawpixel-id-12158813-png.png'); /* Ensure the path is correct */
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.7; /* Make it slightly transparent */
@@ -162,7 +162,7 @@ html, body {
 .mission-timeline-section {
   position: relative;
   width: 100%;
-  background-image: url('/images/galaxy-night-landscape.jpg'); /* Replace with your background image path */
+  background-image: url('/public/images/galaxy-night-landscape.jpg'); /* Replace with your background image path */
   background-size: cover;
   background-position: center;
   padding-top: 100px; /* Added padding to give space for the title */
@@ -409,31 +409,31 @@ html, body {
 .collage-item-1 {
   width: 33.33%;
   height: 600px;
-  background-image: url('/images/Space_Launch.jpg');
+  background-image: url('/public/images/Space_Launch.jpg');
 }
 
 .collage-item-2 {
   width: 33.33%;
   height: 600px;
-  background-image: url('/images/Mars_colony.png');
+  background-image: url('/public/images/Mars_colony.png');
 }
 
 .collage-item-3 {
   width: 33.33%;
   height: 600px;
-  background-image: url('/images/space_window.png');
+  background-image: url('/public/images/space_window.png');
 }
 
 .collage-item-4 {
   width: 33.33%;
   height: 400px;
-  background-image: url('/images/Earthlike_colony.png');
+  background-image: url('/public/images/Earthlike_colony.png');
 }
 
 .collage-item-5 {
   width: 66.66%;
   height: 400px;
-  background-image: url('/images/Spaceship_travel.png');
+  background-image: url('/public/images/Spaceship_travel.png');
 }
 
 /* Container for the solar system to prevent overflow */
