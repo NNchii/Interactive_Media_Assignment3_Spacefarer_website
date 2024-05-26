@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import Homepage from './Homepage';
-import Theory from './Theory';
-import Design from './Design';
+import Homepage from './components/Homepage';
+import Theory from './components/Theory';
+import Design from './components/Design';
+import NetArt from './components/NetArt'; // Import the NetArt component
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function App() {
@@ -17,13 +18,14 @@ function App() {
           <div className="logo"></div>
           <div className="nav-links">
             <Link to="/theory">Theory</Link>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/netart">Net Art</Link> {/* Updated link */}
           </div>
         </div>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/theory" element={<Theory />} />
           <Route path="/design" element={<Design />} />
+          <Route path="/netart" element={<NetArt />} /> {/* Added route */}
           {/* Add other routes as necessary */}
         </Routes>
       </div>

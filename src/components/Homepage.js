@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Homepage.css';
+import '../styles/Homepage.css';
 
 const Homepage = () => {
   const [activeMarker, setActiveMarker] = useState(null);

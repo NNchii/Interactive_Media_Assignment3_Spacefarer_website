@@ -1,5 +1,5 @@
 import React from 'react';
-import './Theory.css';
+import '../styles/Theory.css';
 
 const Theory = () => {
   return (
@@ -19,7 +19,13 @@ const Theory = () => {
           <p>Olia Lialina’s "My Boyfriend Came Back From The War" stands as a profound and pivotal exploration and example of the potential of net art to delve into complex and deeply human experiences through the digital medium. This artwork employs the inherent interactivity, fragmentation and networked communication aspects of the internet to craft a narrative experience that vividly portrays the psychological battle with trauma and the struggles to reintegrate into society faced by war veterans, this is not only a prolific issue faced by countless people in the world, but with today’s geopolitical climate, it has become even more relevant as wars waged on across the world and the prospect of a third world war grows ever closer to becoming a reality. Through its innovative use of the digital space and viewer interaction especially being created at the very infancy of the internet, Lialina has not only told a story, but rather created an environment where the audience became an integral part of the narrative process as they created their own story of a disjointed and fragmented experience of a recovering PTSD veteran. This artwork not only serves as a prominent reminder of the ever evolving relationship between technology and art, but also offers a critical perception on the role of art in society as it encourages viewers to reflect on the impacts of war and the power of art to communication those realities allowing for a deeper understanding for the average individuals of the horrors of war.</p>
         </article>
         <article>
-          <img src="/path-to-your-image.jpg" alt="Description" className="theory-image" />
+        <p>References:</p>
+
+        <p>Carrier, D. (2020). The Work of Art in the Age of the Internet. [online] Hyperallergic. Available at: https://hyperallergic.com/563938/the-work-of-art-in-the-age-of-the-internet/ [Accessed 24 Apr. 2024].</p>
+        <p>DANAE (2019). Net Art, Post-internet Art, New Aesthetics: The Fundamentals of Art on the Internet. [online] Medium. Available at: https://medium.com/danae/net-art-post-internet-art-new-aesthetics-the-fundamentals-of-art-on-the-internet-55dcbd9d6a5 [Accessed 24 Apr. 2024].</p>
+        <p>Geyser, H. 2024. Art on the Internet, 14 September. Lecture notes (WSOA4088A). University of Witwatersrand, Johannesburg.</p>
+        <p>Geyser, H. 2024. internet-art-internetart. Lecture notes (WSOA4088A). University of Witwatersrand, Johannesburg.</p>
+        <p>‌Rhizome.org. (2024). My Boyfriend Came Back from the War | Net Art Anthology. [online] Available at: https://sites.rhizome.org/anthology/lialina.html [Accessed 24 Apr. 2024].</p>
         </article>
       </section>
     </div>

@@ -135,32 +135,37 @@ body {
   
   /* Specific sizes for each collage item to create a varied layout */
   .wireframe-collage .collage-item-1 {
-    width: 33.33%;
+    width: 55%;
     height: 600px;
-    background-image: url('/public/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframes/Wireframe1.png');
   }
   
   .wireframe-collage .collage-item-2 {
-    width: 33.33%;
+    width: 55%;
     height: 600px;
-    background-image: url('/public/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframes/Wireframe2.png');
   }
   
   .wireframe-collage .collage-item-3 {
-    width: 33.33%;
+    width: 55%;
     height: 600px;
-    background-image: url('/public/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframes/Wireframe3.png');
   }
   
   .wireframe-collage .collage-item-4 {
     width: 33.33%;
     height: 400px;
-    background-image: url('/public/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframes/Wireframe4.png');
   }
   
   .wireframe-collage .collage-item-5 {
     width: 66.66%;
     height: 400px;
-    background-image: url('/public/images/Wireframe_Placeholder.png');
+    background-image: url('/public/images/Wireframes/Wireframe5.png');
+  }
+  .wireframe-collage .collage-item-6 {
+    width: 66.66%;
+    height: 400px;
+    background-image: url('/public/images/Wireframes/Wireframe6.png');
   }
   

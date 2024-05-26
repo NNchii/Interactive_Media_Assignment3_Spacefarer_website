@@ -1,0 +1,30 @@
+/* NetArt.css */
+
+.net-art-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/public/images/galaxy-night-landscape.jpg'); /* Same background as other pages */
+    background-size: cover;
+    background-position: center;
+    color: #ced7e0;
+  }
+  
+  .net-art-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .net-art-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .net-art-description {
+    font-size: 1.5rem;
+  }
+  
