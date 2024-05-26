@@ -1,0 +1,629 @@
+/* Ensure the HTML and body elements take up the full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(to bottom right, #062c43, #054569, #5591a9);
+  color: #ced7e0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.homepage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start; /* Align items to the top */
+  color: #ced7e0;
+  width: 100%;
+  background: linear-gradient(to bottom right, #062c43 20%, #000000 50%);
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.astronaut-container {
+  position: absolute;
+  top: 200px; /* Adjusted position */
+  left: 150px; /* Adjusted position */
+  width: 400px; /* Increased size */
+  height: 400px; /* Increased size */
+  z-index: 1; /* Ensure it stays behind the text but in front of the background */
+  background-image: url('/images/image-from-rawpixel-id-12158813-png.png'); /* Ensure the path is correct */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.7; /* Make it slightly transparent */
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Ensure the title and motto are above the astronaut */
+.title, .motto {
+  position: relative;
+  z-index: 2;
+  margin-left: 20px; /* Add left margin */
+  text-align: left; /* Align text to the left */
+}
+
+/* Styles for homepage subsections */
+.subsections {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-left: 50px; /* Add left margin */
+  z-index: 2;
+}
+
+.subsections a {
+  color: #9ccddc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  position: relative;
+  padding: 10px 20px; /* Add padding for box effect */
+  background-color: rgba(0, 44, 67, 0.5); /* Background color with some transparency */
+  border: 2px solid #5591a9; /* Border with theme color */
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.subsections a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ced7e0;
+  transition: width 0.3s;
+}
+
+.subsections a:hover::after {
+  width: 100%;
+}
+.subsections a:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+/* Animation for sliding in from the left */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Ensure the About Us section slides in first */
+.about-section {
+  position: relative;
+  background-color: #062c43e7;
+  color: #ced7e0;
+  padding: 150px 50px;
+  margin-top: 300px;
+  z-index: 1;
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+/* Animations for the individual texts */
+.small-note, .large-text, .about-title, .about-description {
+  opacity: 0;
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.small-note {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-top: -100px;
+  margin-left: 10px;
+  animation-delay: 0.5s;
+}
+
+.large-text {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: 10rem;
+  color: rgba(0, 68, 105, 0.726); /* Adjust opacity for fading effect */
+  z-index: -1; /* Place it behind other content */
+  animation-delay: 1s;
+}
+
+.about-title {
+  font-size: 2rem;
+  color: #9ccddc;
+  margin-top: 120px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow */
+  animation-delay: 1.5s;
+}
+
+.about-description {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow */
+  animation-delay: 2s;
+}
+
+/* Mission Timeline Section */
+.mission-timeline-section {
+  position: relative;
+  width: 100%;
+  background-image: url('/images/galaxy-night-landscape.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px; /* Added padding to give space for the title */
+  animation: fadeInFromBottom 1s ease-in-out forwards;
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.small-note-timeline {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  animation-delay: 0.5s;
+}
+
+/* Additional styles for the dropdown details */
+.marker-details {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #ced7e0;
+}
+
+.timeline-background {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  color: #ced7e0;
+}
+
+.timeline-left {
+  width: 50%;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 1.2rem;
+}
+
+.timeline-year {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 60px;
+}
+
+.timeline-progress {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  gap: 80px;
+}
+
+.timeline-marker {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.timeline-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Arrow styles */
+.arrow {
+  display: inline-block;
+  margin-left: 10px;
+  border: solid #ced7e0;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transition: transform 0.3s;
+}
+
+.arrow.down {
+  transform: rotate(45deg);
+}
+
+.arrow.up {
+  transform: rotate(-135deg);
+}
+
+.info-circle {
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+  margin-right: 200px;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  background: transparent;
+  animation: fadeInFromBottom 1s ease-in-out forwards; /* Add animation */
+}
+
+.info-circle:nth-child(1) {
+  border: 5px solid rgba(6, 44, 67, 0.8); /* #062c43 */
+  box-shadow: 0 0 80px rgba(6, 44, 67, 0.8); /* #062c43 */
+}
+
+.info-circle:nth-child(2) {
+  border: 5px solid rgba(5, 69, 105, 0.8); /* #054569 */
+  box-shadow: 0 0 80px rgba(5, 69, 105, 0.8); /* #054569 */
+}
+
+.info-circle:nth-child(3) {
+  border: 5px solid rgba(85, 145, 169, 0.8); /* #5591a9 */
+  box-shadow: 0 0 80px rgba(85, 145, 169, 0.8); /* #5591a9 */
+}
+
+.info-circle:nth-child(4) {
+  border: 5px solid rgba(156, 205, 220, 0.8); /* #9ccddc */
+  box-shadow: 0 0 80px rgba(156, 205, 220, 0.8); /* #9ccddc */
+}
+
+.info-circle:nth-child(even) {
+  align-self: flex-end;
+}
+
+/* Adjustments for text alignment within circles */
+.info-content {
+  text-align: center;
+  color: #ced7e0;
+  width: 80%; /* Ensure text stays within the circle */
+}
+
+.info-number {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.info-label {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.info-text {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite;
+  z-index: 0; /* Ensure stars are behind everything */
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Collage Section */
+.image-collage-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 200px;
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.collage-item {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s, background-color 0.3s;
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.collage-item:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.collage-item:hover .collage-info {
+  transform: translateY(0);
+}
+
+.collage-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+
+.collage-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.collage-description {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Specific sizes for each collage item to create a varied layout */
+.collage-item-1 {
+  width: 33.33%;
+  height: 600px;
+  background-image: url('/images/Space_Launch.jpg');
+}
+
+.collage-item-2 {
+  width: 33.33%;
+  height: 600px;
+  background-image: url('/images/Mars_colony.png');
+}
+
+.collage-item-3 {
+  width: 33.33%;
+  height: 600px;
+  background-image: url('/images/space_window.png');
+}
+
+.collage-item-4 {
+  width: 33.33%;
+  height: 400px;
+  background-image: url('/images/Earthlike_colony.png');
+}
+
+.collage-item-5 {
+  width: 66.66%;
+  height: 400px;
+  background-image: url('/images/Spaceship_travel.png');
+}
+
+/* Container for the solar system to prevent overflow */
+.solar-system-container {
+  position: absolute;
+  width: 150%; /* Ensure it fits within the viewport */
+  height: 450vh; /* Full viewport height */
+  overflow: hidden; /* Hide any overflow */
+  right: 0; /* Align to the right */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for centering */
+  z-index: 0; /* Ensure solar system is behind everything */
+}
+
+.solar-system {
+  position: absolute; /* Absolute positioning within the container */
+  width: 150%; /* Adjust to fit within the container */
+  height: 150vh; /* Adjust to fit within the container */
+  top: 0;
+  right: -1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: -1; /* Ensure solar system is behind everything */
+}
+
+/* Ensure the sun and planets stay within the container */
+.sun, .planet {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.sun {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, yellow 20%, orange 60%, red 100%);
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 50px rgba(255, 215, 0, 0.8);
+  z-index: -1; /* Ensure sun is behind everything */
+}
+
+.orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: orbit-animation linear infinite;
+  z-index: 0; /* Ensure orbits are behind everything */
+}
+
+.planet {
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1; /* Ensure planets are behind everything */
+}
+
+/* Specific sizes and gradients for each planet */
+.planet.mercury {
+  width: 5px;
+  height: 5px;
+  background: radial-gradient(circle, #aaa 20%, #888 80%);
+  top: -2.5px; /* Align the planet in the center of the orbit line */
+  left: 50%; /* Position the planet on the orbit line */
+  transform: translateX(-50%);
+}
+.planet.venus {
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #e3e3c6 20%, #d2d2a2 80%);
+  top: -5px; /* Align the planet in the center of the orbit line */
+  left: 50%; /* Position the planet on the orbit line */
+  transform: translateX(-50%);
+}
+.planet.earth {
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #3d85c6 20%, #2a69a1 80%);
+  top: -5px; /* Align the planet in the center of the orbit line */
+  left: 50%; /* Position the planet on the orbit line */
+  transform: translateX(-50%);
+}
+.planet.mars {
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #b55b34 20%, #8a3e1e 80%);
+  top: -4px; /* Align the planet in the center of the orbit line */
+  left: 50%; /* Position the planet on the orbit line */
+  transform: translateX(-50%);
+}
+.planet.jupiter {
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle, #d8c2a3 20%, #c0a983 80%);
+  top: -15px; /* Align the planet in the center of the orbit line */
+  left: 50%; /* Position the planet on the orbit line */
+  transform: translateX(-50%);
+}
+.planet.saturn {
+  width: 25px;
+  height: 25px;
+  background: radial-gradient(circle, #d2b48c 20%, #b29563 80%);
+  top: -12.5px; /* Align the planet in the center of the orbit line */
+  left: 50%; /* Position the planet on the orbit line */
+  transform: translateX(-50%);
+}
+.planet.uranus {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #7fffd4 20%, #40e0d0 80%);
+  top: -10px; /* Align the planet in the center of the orbit line */
+  left: 50%; /* Position the planet on the orbit line */
+  transform: translateX(-50%);
+}
+.planet.neptune {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #4169e1 20%, #27408b 80%);
+  top: -10px; /* Align the planet in the center of the orbit line */
+  left: 50%; /* Position the planet on the orbit line */
+  transform: translateX(-50%);
+}
+
+@keyframes orbit-animation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Styles for title and motto */
+.title {
+  font-size: 7rem;
+  margin-top: 350px;
+  margin-left: 50px; /* Add left margin */
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow */
+  color: #d4d4d4;
+  filter: drop-shadow(0 0 2px #0000009a); /* Add glow */
+}
+
+.motto {
+  font-size: 2.5rem; /* Increase font size */
+  margin-top: 5px;
+  margin-left: 400px; /* Add left margin */
+  color: transparent; /* Make text color transparent */
+  -webkit-text-stroke: 1px #9ccddc; /* Decrease outline thickness */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow */
+  filter: drop-shadow(0 0 5px #00000080); /* Add glow */
+}
+
+/* Footer Section */
+.footer {
+  background-color: #062c43;
+  color: #ced7e0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer-link {
+  color: #9ccddc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #5591a9;
+}
+
+.footer-info {
+  margin-bottom: 10px;
+}
+
+.footer-contact {
+  font-size: 0.9rem;
+}

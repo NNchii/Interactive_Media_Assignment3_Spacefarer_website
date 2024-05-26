@@ -1,0 +1,166 @@
+body {
+    background: linear-gradient(to bottom right, #062c43, #054569);
+    color: #eeeeee;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .design-page {
+    padding: 2rem;
+    background: url('/images/galaxy-night-landscape.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .design-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 150px;
+  }
+  
+  .design-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .design-header p {
+    font-size: 1.2rem;
+    color: #9ccddc;
+  }
+  
+  .design-journal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  
+  .design-entry {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  .design-entry.left {
+    flex-direction: row;
+  }
+  
+  .design-entry.right {
+    flex-direction: row-reverse;
+  }
+  
+  .entry-content {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .entry-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .entry-content p {
+    font-size: 1rem;
+  }
+  
+  .entry-image {
+    flex: 1;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 1rem;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Specific background images for each design entry */
+  .design-entry-1 .entry-image {
+    background-image: url('/images/Wireframe_Placeholder.png');
+  }
+  
+  .design-entry-2 .entry-image {
+    background-image: url('/images/Wireframe_Placeholder.png');
+  }
+  
+  /* Wireframe Collage */
+  .wireframe-collage {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .wireframe-collage h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .wireframe-collage .collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .wireframe-collage .collage-item {
+    position: relative;
+    margin: 1rem;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .wireframe-collage .collage-item:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .wireframe-collage .collage-item:hover .collage-info {
+    transform: translateY(0);
+  }
+  
+  .wireframe-collage .collage-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+  
+  /* Specific sizes for each collage item to create a varied layout */
+  .wireframe-collage .collage-item-1 {
+    width: 33.33%;
+    height: 600px;
+    background-image: url('/images/Wireframe_Placeholder.png');
+  }
+  
+  .wireframe-collage .collage-item-2 {
+    width: 33.33%;
+    height: 600px;
+    background-image: url('/images/Wireframe_Placeholder.png');
+  }
+  
+  .wireframe-collage .collage-item-3 {
+    width: 33.33%;
+    height: 600px;
+    background-image: url('/images/Wireframe_Placeholder.png');
+  }
+  
+  .wireframe-collage .collage-item-4 {
+    width: 33.33%;
+    height: 400px;
+    background-image: url('/images/Wireframe_Placeholder.png');
+  }
+  
+  .wireframe-collage .collage-item-5 {
+    width: 66.66%;
+    height: 400px;
+    background-image: url('/images/Wireframe_Placeholder.png');
+  }
+  

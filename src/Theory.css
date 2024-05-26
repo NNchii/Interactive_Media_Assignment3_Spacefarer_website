@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(to bottom right, #062c43, #054569);
+  color: #eeeeee;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.theory-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: url('/images/galaxy-night-landscape.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.theory-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 100px;
+}
+
+.theory-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.theory-header p {
+  font-size: 1.2rem;
+  color: #9ccddc;
+}
+
+.theory-section {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.theory-section article {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.theory-section article h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.theory-section article p {
+  font-size: 1rem;
+}
+
+.theory-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
