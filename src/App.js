@@ -12,7 +12,7 @@ function App() {
       <div className="App">
         <div className="navbar">
           <div className="nav-links">
-            <Link to="/">Home</Link>
+            <Link to="/Interactive_Media_Assignment3_Spacefarer_website/">Home</Link>
             <Link to="/design">Design</Link>
           </div>
           <div className="logo"></div>
