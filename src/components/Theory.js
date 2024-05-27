@@ -3,7 +3,7 @@ import '../styles/Theory.css';
 
 const Theory = () => {
   return (
-    <div className="theory-page">
+    <main className="theory-page">
       <header className="theory-header">
         <h1>Critical Analysis of Net/Web Art</h1>
         <p>An in-depth exploration of “My Boyfriend Came Back From The War".</p>
@@ -28,7 +28,7 @@ const Theory = () => {
         <p>‌Rhizome.org. (2024). My Boyfriend Came Back from the War | Net Art Anthology. [online] Available at: https://sites.rhizome.org/anthology/lialina.html [Accessed 24 Apr. 2024].</p>
         </article>
       </section>
-    </div>
+    </main>
   );
 };
 

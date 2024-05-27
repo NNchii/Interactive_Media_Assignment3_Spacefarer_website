@@ -29,7 +29,7 @@ html, body {
   width: 400px; /* Increased size */
   height: 400px; /* Increased size */
   z-index: 1; /* Ensure it stays behind the text but in front of the background */
-  background-image: url('/public/images/Astronaut.png'); /* Ensure the path is correct */
+  background-image: url('/public/images/Astronaut.png');
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.7; /* Make it slightly transparent */
@@ -162,7 +162,7 @@ html, body {
 .mission-timeline-section {
   position: relative;
   width: 100%;
-  background-image: url('/public/images/GalaxyBG.jpg'); /* Replace with your background image path */
+  background-image: url('/public/images/GalaxyBG.jpg');
   background-size: cover;
   background-position: center;
   padding-top: 100px; /* Added padding to give space for the title */
@@ -282,23 +282,23 @@ html, body {
 }
 
 .info-circle:nth-child(1) {
-  border: 5px solid rgba(6, 44, 67, 0.8); /* #062c43 */
-  box-shadow: 0 0 80px rgba(6, 44, 67, 0.8); /* #062c43 */
+  border: 5px solid rgba(6, 44, 67, 0.8);
+  box-shadow: 0 0 80px rgba(6, 44, 67, 0.8);
 }
 
 .info-circle:nth-child(2) {
-  border: 5px solid rgba(5, 69, 105, 0.8); /* #054569 */
-  box-shadow: 0 0 80px rgba(5, 69, 105, 0.8); /* #054569 */
+  border: 5px solid rgba(5, 69, 105, 0.8);
+  box-shadow: 0 0 80px rgba(5, 69, 105, 0.8);
 }
 
 .info-circle:nth-child(3) {
-  border: 5px solid rgba(85, 145, 169, 0.8); /* #5591a9 */
-  box-shadow: 0 0 80px rgba(85, 145, 169, 0.8); /* #5591a9 */
+  border: 5px solid rgba(85, 145, 169, 0.8);
+  box-shadow: 0 0 80px rgba(85, 145, 169, 0.8);
 }
 
 .info-circle:nth-child(4) {
-  border: 5px solid rgba(156, 205, 220, 0.8); /* #9ccddc */
-  box-shadow: 0 0 80px rgba(156, 205, 220, 0.8); /* #9ccddc */
+  border: 5px solid rgba(156, 205, 220, 0.8);
+  box-shadow: 0 0 80px rgba(156, 205, 220, 0.8);
 }
 
 .info-circle:nth-child(even) {
