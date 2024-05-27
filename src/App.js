@@ -22,7 +22,7 @@ function App() {
           </div>
         </div>
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/Interactive_Media_Assignment3_Spacefarer_website" element={<Homepage />} />
           <Route path="/theory" element={<Theory />} />
           <Route path="/design" element={<Design />} />
           <Route path="/netart" element={<NetArt />} /> {/* Added route */}
