@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Interactive_Media_Assignment3_Spacefarer_website/static/css/main.ccfb86ec.css",
-    "main.js": "/Interactive_Media_Assignment3_Spacefarer_website/static/js/main.7d919b0d.js",
+    "main.js": "/Interactive_Media_Assignment3_Spacefarer_website/static/js/main.386f1ee6.js",
     "static/media/Spaceship_travel.png": "/Interactive_Media_Assignment3_Spacefarer_website/static/media/Spaceship_travel.a557955aab4aa305a23d.png",
     "static/media/Earthlike_colony.png": "/Interactive_Media_Assignment3_Spacefarer_website/static/media/Earthlike_colony.61637a79c057ef3f9afd.png",
     "static/media/Astronaut.png": "/Interactive_Media_Assignment3_Spacefarer_website/static/media/Astronaut.62123d9b42e6732d050c.png",
@@ -19,10 +19,10 @@
     "static/media/Wireframe3.png": "/Interactive_Media_Assignment3_Spacefarer_website/static/media/Wireframe3.c2217a3d5bbbaeebf881.png",
     "index.html": "/Interactive_Media_Assignment3_Spacefarer_website/index.html",
     "main.ccfb86ec.css.map": "/Interactive_Media_Assignment3_Spacefarer_website/static/css/main.ccfb86ec.css.map",
-    "main.7d919b0d.js.map": "/Interactive_Media_Assignment3_Spacefarer_website/static/js/main.7d919b0d.js.map"
+    "main.386f1ee6.js.map": "/Interactive_Media_Assignment3_Spacefarer_website/static/js/main.386f1ee6.js.map"
   },
   "entrypoints": [
     "static/css/main.ccfb86ec.css",
-    "static/js/main.7d919b0d.js"
+    "static/js/main.386f1ee6.js"
   ]
 }
