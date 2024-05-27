@@ -162,7 +162,7 @@ html, body {
 .mission-timeline-section {
   position: relative;
   width: 100%;
-  background-image: url('/public/images/galaxy-night-landscape.jpg'); /* Replace with your background image path */
+  background-image: url('/public/images/GalaxyBG.jpg'); /* Replace with your background image path */
   background-size: cover;
   background-position: center;
   padding-top: 100px; /* Added padding to give space for the title */

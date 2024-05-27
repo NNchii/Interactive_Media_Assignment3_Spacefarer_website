@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url('/public/images/galaxy-night-landscape.jpg'); /* Same background as other pages */
+    background-image: url('/public/images/GalaxyBG.jpg'); /* Same background as other pages */
     background-size: cover;
     background-position: center;
     color: #ced7e0;

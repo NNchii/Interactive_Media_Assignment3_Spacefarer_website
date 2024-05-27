@@ -11,7 +11,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   padding: 2rem;
-  background: url('/public/images/galaxy-night-landscape.jpg') no-repeat center center fixed;
+  background: url('/public/images/GalaxyBG.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
