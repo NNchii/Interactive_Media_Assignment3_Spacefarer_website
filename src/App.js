@@ -21,15 +21,13 @@ function App() {
             <Link to="/netart">Net Art</Link> {/* Updated link */}
           </div>
         </div>
-        <BrowserRouter basename="/Interactive_Media_Assignment3_Spacefarer_website">
           <Routes>
-            <Route path="/Interactive_Media_Assignment3_Spacefarer_website" element={<Homepage />} />
+            <Route path="/Interactive_Media_Assignment3_Spacefarer_website/" element={<Homepage />} />
             <Route path="/theory" element={<Theory />} />
             <Route path="/design" element={<Design />} />
             <Route path="/netart" element={<NetArt />} /> {/* Added route */}
             {/* Add other routes as necessary */}
           </Routes>
-        </BrowserRouter>
       </div>
     </Router>
   );
