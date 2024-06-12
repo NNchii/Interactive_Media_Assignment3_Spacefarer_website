@@ -5,9 +5,12 @@ body {
   }
   
   .design-page {
-    padding: 2rem;
     background: url('/public/images/GalaxyBG.jpg') no-repeat center center fixed;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    flex: 1;
   }
   
   .design-header {
@@ -44,14 +47,6 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   }
   
-  .design-entry.left {
-    flex-direction: row;
-  }
-  
-  .design-entry.right {
-    flex-direction: row-reverse;
-  }
-  
   .entry-content {
     flex: 1;
     padding: 1rem;
@@ -63,7 +58,9 @@ body {
   }
   
   .entry-content p {
-    font-size: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 30px;
+    font-size: 1.2rem;
   }
   
   .entry-image {
@@ -76,16 +73,6 @@ body {
     background-position: center;
   }
   
-  /* Specific background images for each design entry */
-  .design-entry-1 .entry-image {
-    background-image: url('/public/images/Wireframe_Placeholder.png');
-  }
-  
-  .design-entry-2 .entry-image {
-    background-image: url('/public/images/Wireframe_Placeholder.png');
-  }
-  
-  /* Wireframe Collage */
   .wireframe-collage {
     text-align: center;
     margin-top: 4rem;
@@ -133,7 +120,6 @@ body {
     transition: transform 0.3s;
   }
   
-  /* Specific sizes for each collage item to create a varied layout */
   .wireframe-collage .collage-item-1 {
     width: 55%;
     height: 600px;
@@ -153,19 +139,19 @@ body {
   }
   
   .wireframe-collage .collage-item-4 {
-    width: 33.33%;
-    height: 400px;
+    width: 55%;
+    height: 600px;
     background-image: url('/public/images/Wireframes/Wireframe4.png');
   }
   
   .wireframe-collage .collage-item-5 {
-    width: 66.66%;
-    height: 400px;
+    width: 55%;
+    height: 600px;
     background-image: url('/public/images/Wireframes/Wireframe5.png');
   }
   .wireframe-collage .collage-item-6 {
-    width: 66.66%;
-    height: 400px;
-    background-image: url('/public/images/Wireframes/Wireframe6.png');
+    width: 55%;
+    height: 600px;
+    background-image: url('/public/images/NetartWireframe.png');
   }
   

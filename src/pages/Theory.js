@@ -1,15 +1,17 @@
 import React from 'react';
 import '../styles/Theory.css';
+import Footer from '../components/Footer';
 
 const Theory = () => {
   return (
     <main className="theory-page">
       <header className="theory-header">
-        <h1>Critical Analysis of Net/Web Art</h1>
-        <p>An in-depth exploration of “My Boyfriend Came Back From The War".</p>
+        <h1>My theory</h1>
+        <p>An in-depth exploration into NetArt</p>
       </header>
       <section className="theory-section">
         <article>
+        <h2>Critical Analysis of Net/Web Art</h2>
           <p>The landscape of digital art is one that is ever evolving, through which, net art has emerged as a pivotal genre that redefines the interactions between the viewer and the artworks to expand the boundaries of narrative and expression. The net art that has caught my personal interest is “My Boyfriend Came Back From The War'' (MBCBFTW) by the Russian artist Olia Lialina in 1996. The net art was created in the early days of the internet which delved into the themes of personal trauma and societal disconnection of someone that returned from a war through the usage of the medium’s inherent properties of interactivity, fragmentation and networked communication. "Net Art, Post-internet Art, New Aesthetics: The Fundamentals of Art on the Internet," noted that net art transforms the traditional art experience by emphasising the viewer’s role in the navigation of the artworks narrative which I think is the perfect medium for an exploration of one’s personal traumas suffered through a war and their disconnect from society when they return making it so that they’ll never be able to fully integrate into a peaceful life again.</p>
           <p>In comparison to traditional art, the internet as a medium allows for unique capabilities such as its interactivity, connectivity and potential for non-linear storytelling which Olia Lialina’s "My Boyfriend Came Back From The War" utilised perfectly in creating a multi-layered narrative that allowed the viewers to engage with the artwork in a personal way. In "My Boyfriend Came Back From The War", the artwork’s interactivity is not merely a feature, but instead, it is a fundamental part of the artwork for the viewer to experience, the layout of the net art is structured as a series of black and white framed images that are distorted in one way or another and text blocks that branches off into different narrative paths the viewer can click through at their own pace to create their own narrative for the artwork. This form of navigation of "My Boyfriend Came Back From The War" mimics the process of memory recall and fragmented storytelling of that of a traumatised and broken individual returning from a war, the distorted and uncanny images shows the disconnect from reality caused by PTSD and the narrative the viewer can click through shows a conversation of a returning soldier and his partner, where it gradually reveals to the viewer the strains on their relationship caused by his trauma and his struggles to hold onto reality and society.</p>
           <p>The usage of the internet for the artwork also creates a form of networked communication between the artwork and the viewer, where each choice made by the viewer in their navigation of the frames creates a unique narrative path, which can lead to emotions of isolation or misunderstanding for the viewer, which is central to the artwork’s exploration of societal disconnect and the struggles to maintain personal relationships while suffering from PTSD. Lialina’s usage of the interconnected nature of the internet allowed her to create a universal aspect to these experiences rather than just the personal. The theoretical framework mentioned in "Net Art, Post-internet Art, New Aesthetics: The Fundamentals of Art on the Internet" supports the idea that net art transforms the art experience by emphasising the role of the viewer as they interact with the narrative of the artwork on a personal level. In Lialina’s work, the viewer’s interaction is crucial as they literally build their own narratives through their own choices as they progress through the story, this form of active participation from the viewer forces them to confront and understand the complexities and the various struggles one has to face when returning from a war as the net art is not just telling a story to the viewer, rather it forces them to live through the bitter reality that a war veteran has to face, thus creating a whole new experience that passive engagement of the traditional art cannot deliver.</p>
@@ -27,7 +29,40 @@ const Theory = () => {
         <p>Geyser, H. 2024. internet-art-internetart. Lecture notes (WSOA4088A). University of Witwatersrand, Johannesburg.</p>
         <p>‌Rhizome.org. (2024). My Boyfriend Came Back from the War | Net Art Anthology. [online] Available at: https://sites.rhizome.org/anthology/lialina.html [Accessed 24 Apr. 2024].</p>
         </article>
-      </section>
+        <article>
+          <h2>Net Art planning</h2>
+          <p>For my net art I have looked at My Boyfriend Came Back from the War (MBCBFTW) by Olia Lialina which was the piece that I have researched for my analysis essay as well. MBCBFTW was created in the infancy of the internet and HTML where the author had utilised HTML to create a choose your own adventure style storytelling where the user would click on whichever button or image they want on the screen to progress through the storytelling of the art piece which was the struggles of someone that suffers PTSD from a war and the hardships they faced to reintegrate into society.</p>
+          <section className="netart-images">
+            <a href="https://www.artsy.net/artwork/olia-lialina-my-boyfriend-came-back-from-the-war-1" className="netart-image image1">
+              <section className="overlay">
+                <h3 className="text-title">My Boyfriend Came Back from the War</h3>
+                <p className="text-description">My Boyfriend Came Back from the War, 1996 by Olia Lialina</p>
+              </section>
+            </a>
+            <a href="https://anthology.rhizome.org/starrynight" className="netart-image image2">
+              <section className="overlay">
+                <h3 className="text-title">Starry Night</h3>
+                <p className="text-description">Starry Night, 1999 by Alex Galloway, Mark Tribe and Martin Wattenberg.</p>
+              </section>
+            </a>
+          </section>
+          <p>Another net art I looked into was Starry Night, 1999 by Alex Galloway, Mark Tribe and Martin Wattenberg. The artwork was created as an artistic archive for Rhizome's email discussion list for artists that worked on different and new forms of media. Each star on the net art is an archieved email and the user could select keywords which would from different constellations by connecting emails that are related to the keyword together.</p>
+          <p>For my net art I'd like to create a space themed artwork that users can interact with easily like the simplicity of MBFCBFTW which can be navigated with just a mouse while drawing up the constellation idea from Starry Night where the user could navigate/explore the vastness of the universe and understand just how little we are compared to the observable universe let alone the unobserved universe.</p>
+          <p>On the technical side, I plan on making randomised dots to be created around the page and then connect them together with lines to mimic the looks of a sci-fi star map, when the user click on a dot, the entire 'map' would randomise. I want to do this because the overall theme of my website is a fictional space journey where humanity travels the stars and create new colonies, however space is a very vast place and each time you move a location, your perspective of the star changes just like when the viewer click on a dot, the entire map changes.</p>
+          <p>My main concern for the technical side is to make sure that the lines connects correctly once the 'stars' dots randomise so that the entire artwork functions correctly no matter how many times the viewer clicks on the dots.</p>
+        </article>
+
+        <article>
+          <h2>Net Art Rationale - The infinity</h2>
+          <p>My net art that I have dubbed "The infinity" is a series of dots that are randomly placed around the net art page, each dots are interconnected by several lines. The artwork itself is larger than the screen so the user can use both the vertical and horizontal scrolls to explore the entire artwork, the reason I chose this size is to create a claustrophobic feeling as the user could never fully view the entire artwork at once, only a section that's filled with lines and dots, this mirrors the reality of humanity gazing upon the infinite universe where what we could observe is already unimaginably vast, yet it pales in comparison with everything out there that we can not observe.</p>
+          <section className="netart-images">
+            <article className="netart-image image3"></article>
+            <article className="netart-image image4"></article>
+          </section>
+          <p>When the user click on a dot, the entire artwork shuffles around to create a brand new perspective, this was done as to show that once we are able to explore the stars, the constellations that we know so well will change as the stars' position will change based on wherever you are in the vast galaxy, the night sky will not be the same for someone that is living on a planet light years away from the Earth. Each line connecting the distant dots signifies the connection of humanity as a whole no matter where we are in the infinite universe.</p>
+        </article>
+      </section> 
+      <Footer />
     </main>
   );
 };

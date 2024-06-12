@@ -1,30 +1,54 @@
-/* NetArt.css */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Ensuring that the user can scroll vertically and horizontally across the net art. */
+  margin: 0;
+  padding: 0;
+}
 
-.net-art-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-image: url('/public/images/GalaxyBG.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #ced7e0;
-  }
-  
-  .net-art-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .net-art-title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .net-art-description {
-    font-size: 1.5rem;
-  }
-  
+#netart-spacebackground {
+  width: 200vw;
+  height: 210vh;
+  background: radial-gradient(circle at center, #000000, #000000);
+  position: relative;
+  overflow: visible;
+}
+
+.dot-wrapper {
+  position: absolute;
+  cursor: pointer;
+  width: 30px; 
+  height: 30px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s; 
+}
+
+.dot-wrapper:hover .star-system-rep {
+  transform: scale(1.5); 
+}
+
+.star-system-rep {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.5s; 
+}
+
+.line {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(to bottom, #929292, #fff); 
+  transform-origin: 0 0; 
+}
+
+.layered-line {
+  position: absolute;
+  width: 1px; 
+  height: 100%; 
+  background: #aaa; 
+  opacity: 0.5; 
+  z-index: 1; 
+}

@@ -1,4 +1,3 @@
-/* Ensure the HTML and body elements take up the full height */
 html, body {
   height: 100%;
   margin: 0;
@@ -6,7 +5,7 @@ html, body {
   font-family: 'Orbitron', sans-serif;
   background: linear-gradient(to bottom right, #062c43, #054569, #5591a9);
   color: #ced7e0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; 
 }
 
 .homepage {
@@ -14,25 +13,26 @@ html, body {
   display: flex;
   flex-direction: column;
   position: relative;
-  align-items: flex-start; /* Align items to the left */
-  justify-content: flex-start; /* Align items to the top */
+  align-items: flex-start; 
+  justify-content: flex-start; 
   color: #ced7e0;
   width: 100%;
   background: linear-gradient(to bottom right, #062c43 20%, #000000 50%);
-  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-y: auto; 
+  flex: 1;
 }
 
 .astronaut-container {
   position: absolute;
-  top: 200px; /* Adjusted position */
-  left: 150px; /* Adjusted position */
-  width: 400px; /* Increased size */
-  height: 400px; /* Increased size */
-  z-index: 1; /* Ensure it stays behind the text but in front of the background */
+  top: 200px; 
+  left: 150px; 
+  width: 400px; 
+  height: 400px; 
+  z-index: 1;
   background-image: url('/public/images/Astronaut.png');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.7; /* Make it slightly transparent */
+  opacity: 0.7; 
   animation: float 6s ease-in-out infinite;
 }
 
@@ -48,21 +48,19 @@ html, body {
   }
 }
 
-/* Ensure the title and motto are above the astronaut */
 .title, .motto {
   position: relative;
   z-index: 2;
-  margin-left: 20px; /* Add left margin */
-  text-align: left; /* Align text to the left */
+  margin-left: 20px; 
+  text-align: left; 
 }
 
-/* Styles for homepage subsections */
 .subsections {
   margin-top: 20px;
   display: flex;
   justify-content: flex-start;
   gap: 20px;
-  margin-left: 50px; /* Add left margin */
+  margin-left: 50px; 
   z-index: 2;
 }
 
@@ -71,11 +69,11 @@ html, body {
   text-decoration: none;
   font-size: 0.9rem;
   position: relative;
-  padding: 10px 20px; /* Add padding for box effect */
-  background-color: rgba(0, 44, 67, 0.5); /* Background color with some transparency */
-  border: 2px solid #5591a9; /* Border with theme color */
-  border-radius: 8px; /* Rounded corners */
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  padding: 10px 20px; 
+  background-color: rgba(0, 44, 67, 0.5); 
+  border: 2px solid #5591a9; 
+  border-radius: 8px; 
+  transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .subsections a::after {
@@ -91,10 +89,10 @@ html, body {
   width: 100%;
 }
 .subsections a:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.05); 
 }
-/* Animation for sliding in from the left */
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -106,7 +104,6 @@ html, body {
   }
 }
 
-/* Ensure the About Us section slides in first */
 .about-section {
   position: relative;
   background-color: #062c43e7;
@@ -117,7 +114,6 @@ html, body {
   animation: slideInFromLeft 1s ease-in-out forwards;
 }
 
-/* Animations for the individual texts */
 .small-note, .large-text, .about-title, .about-description {
   opacity: 0;
   animation: slideInFromLeft 1s ease-in-out forwards;
@@ -137,8 +133,8 @@ html, body {
   top: 50px;
   left: 20px;
   font-size: 10rem;
-  color: rgba(0, 68, 105, 0.726); /* Adjust opacity for fading effect */
-  z-index: -1; /* Place it behind other content */
+  color: rgba(0, 68, 105, 0.726); 
+  z-index: -1; 
   animation-delay: 1s;
 }
 
@@ -146,7 +142,7 @@ html, body {
   font-size: 2rem;
   color: #9ccddc;
   margin-top: 120px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   animation-delay: 1.5s;
 }
 
@@ -154,7 +150,7 @@ html, body {
   margin-top: 20px;
   font-size: 1.1rem;
   line-height: 1.6;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
   animation-delay: 2s;
 }
 
@@ -165,7 +161,7 @@ html, body {
   background-image: url('/public/images/GalaxyBG.jpg');
   background-size: cover;
   background-position: center;
-  padding-top: 100px; /* Added padding to give space for the title */
+  padding-top: 100px; 
   animation: fadeInFromBottom 1s ease-in-out forwards;
 }
 
@@ -188,7 +184,6 @@ html, body {
   animation-delay: 0.5s;
 }
 
-/* Additional styles for the dropdown details */
 .marker-details {
   margin-top: 10px;
   padding: 10px;
@@ -247,7 +242,6 @@ html, body {
   gap: 40px;
 }
 
-/* Arrow styles */
 .arrow {
   display: inline-block;
   margin-left: 10px;
@@ -264,7 +258,7 @@ html, body {
 .arrow.up {
   transform: rotate(-135deg);
 }
-
+/*Info circle section*/
 .info-circle {
   width: 300px;
   height: 300px;
@@ -278,7 +272,7 @@ html, body {
   position: relative;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
   background: transparent;
-  animation: fadeInFromBottom 1s ease-in-out forwards; /* Add animation */
+  animation: fadeInFromBottom 1s ease-in-out forwards;
 }
 
 .info-circle:nth-child(1) {
@@ -305,11 +299,10 @@ html, body {
   align-self: flex-end;
 }
 
-/* Adjustments for text alignment within circles */
 .info-content {
   text-align: center;
   color: #ced7e0;
-  width: 80%; /* Ensure text stays within the circle */
+  width: 80%; 
 }
 
 .info-number {
@@ -332,7 +325,7 @@ html, body {
   background-color: white;
   border-radius: 50%;
   animation: twinkle 2s infinite;
-  z-index: 0; /* Ensure stars are behind everything */
+  z-index: 0; 
 }
 
 @keyframes twinkle {
@@ -350,7 +343,6 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin-bottom: 200px;
   animation: slideInFromLeft 1s ease-in-out forwards;
 }
 
@@ -405,7 +397,6 @@ html, body {
   margin-top: 5px;
 }
 
-/* Specific sizes for each collage item to create a varied layout */
 .collage-item-1 {
   width: 33.33%;
   height: 600px;
@@ -415,53 +406,51 @@ html, body {
 .collage-item-2 {
   width: 33.33%;
   height: 600px;
-  background-image: url('/public/images/Mars_colony.png');
+  background-image: url('/public/images/Mars_colony.jpg');
 }
 
 .collage-item-3 {
   width: 33.33%;
   height: 600px;
-  background-image: url('/public/images/space_window.png');
+  background-image: url('/public/images/space_window.jpg');
 }
 
 .collage-item-4 {
   width: 33.33%;
   height: 400px;
-  background-image: url('/public/images/Earthlike_colony.png');
+  background-image: url('/public/images/Earthlike_colony.jpg');
 }
 
 .collage-item-5 {
   width: 66.66%;
   height: 400px;
-  background-image: url('/public/images/Spaceship_travel.png');
+  background-image: url('/public/images/Spaceship_travel.jpg');
 }
 
-/* Container for the solar system to prevent overflow */
 .solar-system-container {
   position: absolute;
-  width: 150%; /* Ensure it fits within the viewport */
-  height: 450vh; /* Full viewport height */
-  overflow: hidden; /* Hide any overflow */
-  right: 0; /* Align to the right */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Adjust for centering */
-  z-index: 0; /* Ensure solar system is behind everything */
+  width: 150%; 
+  height: 450vh; 
+  overflow: hidden; 
+  right: 0;
+  top: 50%; 
+  transform: translateY(-50%); 
+  z-index: 0; 
 }
 
 .solar-system {
-  position: absolute; /* Absolute positioning within the container */
-  width: 150%; /* Adjust to fit within the container */
-  height: 150vh; /* Adjust to fit within the container */
+  position: absolute; 
+  width: 150%; 
+  height: 150vh; 
   top: 0;
   right: -1400px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  z-index: -1; /* Ensure solar system is behind everything */
+  z-index: -1; 
 }
 
-/* Ensure the sun and planets stay within the container */
 .sun, .planet {
   position: absolute;
   border-radius: 50%;
@@ -475,7 +464,7 @@ html, body {
   border-radius: 50%;
   position: absolute;
   box-shadow: 0 0 50px rgba(255, 215, 0, 0.8);
-  z-index: -1; /* Ensure sun is behind everything */
+  z-index: -1; 
 }
 
 .orbit {
@@ -486,78 +475,77 @@ html, body {
   justify-content: center;
   align-items: center;
   animation: orbit-animation linear infinite;
-  z-index: 0; /* Ensure orbits are behind everything */
+  z-index: 0; 
 }
 
 .planet {
   border-radius: 50%;
   position: absolute;
-  z-index: -1; /* Ensure planets are behind everything */
+  z-index: -1; 
 }
 
-/* Specific sizes and gradients for each planet */
 .planet.mercury {
   width: 5px;
   height: 5px;
   background: radial-gradient(circle, #aaa 20%, #888 80%);
-  top: -2.5px; /* Align the planet in the center of the orbit line */
-  left: 50%; /* Position the planet on the orbit line */
+  top: -2.5px; 
+  left: 50%; 
   transform: translateX(-50%);
 }
 .planet.venus {
   width: 10px;
   height: 10px;
   background: radial-gradient(circle, #e3e3c6 20%, #d2d2a2 80%);
-  top: -5px; /* Align the planet in the center of the orbit line */
-  left: 50%; /* Position the planet on the orbit line */
+  top: -5px; 
+  left: 50%; 
   transform: translateX(-50%);
 }
 .planet.earth {
   width: 10px;
   height: 10px;
   background: radial-gradient(circle, #3d85c6 20%, #2a69a1 80%);
-  top: -5px; /* Align the planet in the center of the orbit line */
-  left: 50%; /* Position the planet on the orbit line */
+  top: -5px; 
+  left: 50%; 
   transform: translateX(-50%);
 }
 .planet.mars {
   width: 8px;
   height: 8px;
   background: radial-gradient(circle, #b55b34 20%, #8a3e1e 80%);
-  top: -4px; /* Align the planet in the center of the orbit line */
-  left: 50%; /* Position the planet on the orbit line */
+  top: -4px; 
+  left: 50%; 
   transform: translateX(-50%);
 }
 .planet.jupiter {
   width: 30px;
   height: 30px;
   background: radial-gradient(circle, #d8c2a3 20%, #c0a983 80%);
-  top: -15px; /* Align the planet in the center of the orbit line */
-  left: 50%; /* Position the planet on the orbit line */
+  top: -15px; 
+  left: 50%; 
   transform: translateX(-50%);
 }
 .planet.saturn {
   width: 25px;
   height: 25px;
   background: radial-gradient(circle, #d2b48c 20%, #b29563 80%);
-  top: -12.5px; /* Align the planet in the center of the orbit line */
-  left: 50%; /* Position the planet on the orbit line */
+  top: -12.5px; 
+  left: 50%; 
   transform: translateX(-50%);
 }
 .planet.uranus {
   width: 20px;
   height: 20px;
   background: radial-gradient(circle, #7fffd4 20%, #40e0d0 80%);
-  top: -10px; /* Align the planet in the center of the orbit line */
-  left: 50%; /* Position the planet on the orbit line */
+  top: -10px; 
+  left: 50%; 
   transform: translateX(-50%);
 }
 .planet.neptune {
   width: 20px;
   height: 20px;
   background: radial-gradient(circle, #4169e1 20%, #27408b 80%);
-  top: -10px; /* Align the planet in the center of the orbit line */
-  left: 50%; /* Position the planet on the orbit line */
+  top: -10px; 
+  left: 50%; 
   transform: translateX(-50%);
 }
 
@@ -566,64 +554,23 @@ html, body {
   100% { transform: rotate(360deg); }
 }
 
-/* Styles for title and motto */
 .title {
   font-size: 7rem;
   margin-top: 350px;
-  margin-left: 50px; /* Add left margin */
+  margin-left: 50px; 
   margin-bottom: 10px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   color: #d4d4d4;
-  filter: drop-shadow(0 0 2px #0000009a); /* Add glow */
+  filter: drop-shadow(0 0 2px #0000009a); 
 }
 
 .motto {
-  font-size: 2.5rem; /* Increase font size */
+  font-size: 2.5rem; 
   margin-top: 5px;
-  margin-left: 400px; /* Add left margin */
-  color: transparent; /* Make text color transparent */
-  -webkit-text-stroke: 1px #9ccddc; /* Decrease outline thickness */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Add shadow */
-  filter: drop-shadow(0 0 5px #00000080); /* Add glow */
+  margin-left: 400px; 
+  color: transparent; 
+  -webkit-text-stroke: 1px #9ccddc; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+  filter: drop-shadow(0 0 5px #00000080); 
 }
 
-/* Footer Section */
-.footer {
-  background-color: #062c43;
-  color: #ced7e0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.footer-link {
-  color: #9ccddc;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-link:hover {
-  color: #5591a9;
-}
-
-.footer-info {
-  margin-bottom: 10px;
-}
-
-.footer-contact {
-  font-size: 0.9rem;
-}

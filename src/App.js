@@ -1,33 +1,23 @@
 import React from 'react';
 import './App.css';
-import Homepage from './components/Homepage';
-import Theory from './components/Theory';
-import Design from './components/Design';
-import NetArt from './components/NetArt'; // Import the NetArt component
-import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Homepage from './pages/Homepage';
+import Theory from './pages/Theory';
+import Design from './pages/Design';
+import NetArt from './pages/NetArt';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <div className="navbar">
-          <div className="nav-links">
-            <Link to="/Interactive_Media_Assignment3_Spacefarer_website">Home</Link>
-            <Link to="/design">Design</Link>
-          </div>
-          <div className="logo"></div>
-          <div className="nav-links">
-            <Link to="/theory">Theory</Link>
-            <Link to="/netart">Net Art</Link> {/* Updated link */}
-          </div>
-        </div>
-          <Routes>
-            <Route path="/Interactive_Media_Assignment3_Spacefarer_website/" element={<Homepage />} />
-            <Route path="/theory" element={<Theory />} />
-            <Route path="/design" element={<Design />} />
-            <Route path="/netart" element={<NetArt />} /> {/* Added route */}
-            {/* Add other routes as necessary */}
-          </Routes>
+        <Navbar /> {/* Using the Navbar component */}
+        <Routes>
+          <Route path="/Interactive_Media_Assignment3_Spacefarer_website/" element={<Homepage />} />
+          <Route path="/theory" element={<Theory />} />
+          <Route path="/design" element={<Design />} />
+          <Route path="/netart" element={<NetArt />} />
+        </Routes>
       </div>
     </Router>
   );
